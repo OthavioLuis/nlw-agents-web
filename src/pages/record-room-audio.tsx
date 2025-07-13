@@ -22,7 +22,7 @@ export function RecordRoomAudio() {
     function stopRecording() {
         setIsRecording(false)
 
-        if(recorder.current && recorder.current.state != 'inactive') {
+        if(recorder.current && recorder.current.state !== 'inactive') {
             recorder.current.stop()
         }
 
